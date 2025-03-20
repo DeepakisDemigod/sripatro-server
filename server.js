@@ -8,9 +8,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
 
-app.get("/", (req, res) => {
-  res.send("welcome to sripatro proxy server")
-})
 
 app.post("/get-horoscope", async (req, res) => {
   try {
